@@ -17,7 +17,18 @@ $.path.task.forEach(function(taskPath) {
   require(taskPath)();
 });
 
-
+$.gulp.task('build', $.gulp.series(
+  'clean',
+  $.gulp.parallel(
+    'sass-prod',
+    'pug',
+    'js.foundation',
+    'js-prod',
+    'copy.image',
+    'fonts',
+    'css.foundation'
+  )
+));
 
 $.gulp.task('default', $.gulp.series(
   'clean',
