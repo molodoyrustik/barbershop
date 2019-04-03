@@ -1,0 +1,51 @@
+extends ../layouts/main-layout.pug
+
+block title
+  title Прайс-лист
+
+block content
+  header.header
+    .container
+      +navigation('Прайс-лист', additionClass="navigation__link--active")
+      .header__user-block-pos
+        .user-block
+          a(href="#").user-block__login Вход
+          
+  main.price-page
+    div.container
+      .price-page__header
+        h1.price-page__title Прайс-лист
+        nav.breadcrumbs
+          ul.breadcrumbs__list
+            li.breadcrumbs__item
+              a(href="/index.html").breadcrumbs__link.breadcrumbs__link--first-child  Главная
+            li.breadcrumbs__item
+              a(href="/price.html").breadcrumbs__link.breadcrumbs__link--active  Прайс-лист
+      .price-page__main-title Истинно мужская классика
+      .price-page__content
+        .price-page__left
+          .price-page__block
+            .price-page__block-title Мы используем только лучшие средства:
+            ul.price-page__list
+              li.price-page__item Baxter of California
+              li.price-page__item MR Natty
+              li.price-page__item Suavecito
+              li.price-page__item Malin+Goetz
+          .price-page__block
+            .price-page__block-title НЕСКОЛЬКО СЛОВ О НАС:
+            .price-page__text Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+        .price-page__right
+          .price-page__block
+            .price-page__block-title Цены на услуги наших мастеров:
+            table.price-page__table
+              tr.price-page__tr
+                td.price-page__td Стрижка
+                td.price-page__td.price-page__td--text-align 1500 P.
+              tr.price-page__tr
+                td.price-page__td Стрижка бороды
+                td.price-page__td.price-page__td--text-align 500 P.
+              tr.price-page__tr
+                td.price-page__td Накрутка усов
+                td.price-page__td.price-page__td--text-align 350 P.
+          .price-page__block
+            .price-page__text Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!

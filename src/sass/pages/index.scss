@@ -1,0 +1,209 @@
+.index-page {
+  padding-top: 55px;
+  padding-bottom: 65px;
+  background-color: #000000;
+  background-image: url('/images/index-bg.png');
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.main-logo {
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.main-logo__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.features {
+  margin-bottom: 85px;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.features__item {
+  position: relative;
+  width: 284px;
+  text-align: center;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: #f7f4f1;
+    transform: rotate(45deg);
+    transform-origin: center;
+  }
+}
+
+.features__name {
+  margin-bottom: 85px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  @include ptSans('bold');
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 25px;
+  color: #ffffff;
+  @include ptSans('bold');
+}
+
+.index-content {
+  @extend %clearfix;
+  margin-bottom: 35px;
+  padding-top: 55px;
+  padding-right: 80px;
+  padding-bottom: 55px;
+  padding-left: 80px;
+  color: #000000;
+  background: url('/images/row-split.png') no-repeat center, url('/images/barbershop-index.jpg');
+}
+
+.index-content__left {
+  float: left;
+}
+
+.index-content__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  @include ptSans('bold');
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.news-preview {
+  width: 300px;
+}
+
+.news-preview__list {
+
+}
+
+.news-preview__item {
+  margin-bottom: 35px;
+}
+
+.news-preview__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  @include ptSans('bold');
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.news-preview__time {
+  margin: 0;
+  padding: 0;
+  @include ptSans('regular');
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: lowercase;
+}
+
+.index-content__right {
+  width: 300px;
+  float: right;
+}
+
+.gallery {
+  width: 300px;
+}
+
+.gallery__content {
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: #ffffff;
+}
+
+.gallery__controllers {
+  @extend %clearfix;
+}
+
+.gallery__prev-btn {
+  float: left;
+}
+
+.gallery__next-btn {
+  float: right; 
+}
+
+.index-content__left--width {
+  width: 321px;
+}
+
+.contact-info {
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contect-info__text {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  @include ptSans('bold');
+  font-size: 14px;
+  line-height: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact-info__controllers {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking {
+
+}
+
+.booking__text {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  @include ptSans('bold');
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.booking__input-wrap {
+  @extend %clearfix;
+  margin-bottom: 15px;
+}
+
+.booking__input {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  &:nth-child(2n+1) {
+    margin-left: 0;
+  }
+}

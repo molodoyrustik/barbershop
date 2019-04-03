@@ -1,0 +1,26 @@
+// variables
+$white: #f6f6f6;
+$blue: #33c1e3;
+$red: #e85f61;
+$gray: #727272;
+$dark-gray: #414141;
+
+// layout
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/adjustment";
+
+// styles
+@import "common/header";
+@import "common/navigation";
+@import "common/breadcrumbs";
+@import "common/modal";
+@import "common/button";
+@import "common/footer";
+
+// pages
+@import "pages/index";
+@import "pages/price";
+@import "pages/shop";
+@import "pages/item";

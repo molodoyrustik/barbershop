@@ -1,0 +1,151 @@
+.item-page {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-image: url('/images/barbershop-index.jpg')
+}
+
+.item-page__header {
+  margin-bottom: 60px; 
+}
+
+.item-page__title {
+  margin-bottom: 30px;
+  @include ptSans('bold');
+  font-size: 30px;
+  color: #000000;
+}
+
+.item-page__content {
+  @extend %clearfix;
+}
+
+.item-page__left-side {
+  float: left;
+}
+
+.item-page__main-img-wrap {
+  display: block;
+  width: 460px;
+  margin-bottom: 20px;
+}
+
+.item-page__main-img {
+  width: 100%;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.item-page__small-images-wrap {
+  display: flex;
+}
+
+.item-page__small-img-wrap {
+  display: inline-block;
+  width: 140px;
+  margin-left: 20px;
+
+  &:first-child{
+    margin-left: 0;
+  }
+}
+
+.item-page__small-img {
+  width: 100%;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.item-page__right-side {
+  float: right;
+  width: 390px;
+  padding-top: 35px;
+  @include ptSans('bold');
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.item-page__dec-text {
+  @extend %clearfix;
+  margin-bottom: 45px;
+}
+
+.item-page__availability {
+  display: block;
+  float: left;
+}
+
+.item-page__vendor-code {
+  display: block;
+  float: right;
+  color: #aeaeae;
+}
+
+.item-page__text {
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+}
+
+.item-page__price-and-btn {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.item-page__price {
+  width: 110px;
+  font-family: 'PT Sans Narrow Bold';
+  font-size: 14px;
+  color: #000000;
+  background-color: #e5e5e5;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.item-page__btn {
+  width: 80px;
+}
+
+.item-page__set {
+
+}
+
+.item-page__set-title {
+  margin-bottom: 35px;
+  @include ptSans('bold');
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.item-page__set-list {
+  margin: 0;
+  padding: 0;
+}
+
+.item-page__set-item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: 'PT Sans Narrow Bold';
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}

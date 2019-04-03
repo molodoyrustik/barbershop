@@ -1,0 +1,11 @@
+include ../mixins/mixins.pug
+
+doctype html
+html(lang="ru-RU")
+	include ../common/head.pug
+body
+	<!-- / ========= header ========= \ -->
+	//- include  ../common/header.pug	
+	block content
+	<!-- / ========= footer ========= \ -->
+	include ../common/footer.pug

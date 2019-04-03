@@ -1,0 +1,54 @@
+extends ../layouts/main-layout.pug
+
+block title
+  title Набор для путешествий Baxter of California
+
+block content
+  header.header
+      .container
+        .header__nav-pos
+          +navigation('Магазин', additionClass="navigation__link--active")
+        .header__user-block-pos
+          .user-block
+            a(href="#").user-block__login Вход
+  main.item-page
+    div.container
+      .item-page__header
+        h1.item-page__title Набор для путешествий Baxter of California
+        nav.breadcrumbs
+          ul.breadcrumbs__list
+            li.breadcrumbs__item
+              a(href="/index.html").breadcrumbs__link.breadcrumbs__link--first-child  Главная
+            li.breadcrumbs__item
+              a(href="/shop.html").breadcrumbs__link  Магазин
+            li.breadcrumbs__item
+              a(href="#").breadcrumbs__link  Средства для ухода
+            li.breadcrumbs__item
+              a(href="/item.html").breadcrumbs__link.breadcrumbs__link--active  Набор для путешествий Baxter of California
+      .item-page__content
+        .item-page__left-side
+          .item-page__main-img-wrap
+            img(src="/images/item-main.png", alt="").item-page__main-img
+          .item-page__small-images-wrap
+            .item-page__small-img-wrap
+              img(src="/images/item-1.png", alt="").item-page__small-img
+            .item-page__small-img-wrap
+              img(src="/images/item-1.png", alt="").item-page__small-img
+            .item-page__small-img-wrap
+              img(src="/images/item-1.png", alt="").item-page__small-img
+        .item-page__right-side
+          .item-page__dec-text
+            span.item-page__availability Есть в наличии
+            span.item-page__vendor-code Аритукл: DEXTER-AE
+          .item-page__text Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+          .item-page__price-and-btn
+            .item-page__price 2900 руб.
+            .btn.item-page__btn Купить
+          .item-page__set
+            .item-page__set-title В набор входят:
+            ul.item-page__set-list
+              li.item-page__set-item Средство для умывания (50 мл)
+              li.item-page__set-item Увлажняющий крем (50 мл)
+              li.item-page__set-item Крем для бритья (50 мл)
+              li.item-page__set-item Крем после бритья, шампунь (50 мл)
+              li.item-page__set-item Удобная кожаная косметичка

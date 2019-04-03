@@ -1,0 +1,117 @@
+.btn {
+  display: block;
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include ptSans('bold');
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #663d15;
+  }
+}
+
+.input {
+  display: block;
+  width: 106px;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @include ptSans('bold');
+  color: #000000;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+
+  &:focus {
+    border: 2px solid #663d15;
+  }
+}
+
+.checkbox-group {
+  display: block;
+}
+
+.checkbox-group__input {
+  display: none;
+}
+
+.checkbox-group__indicator {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/checkbox.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.checkbox-group__text {
+  display: inline-block;
+  margin-left: 25px;
+  @include ptSans('bold');
+  color: #000000;
+  font-size: 14px;
+  line-height: 14px;
+  vertical-align: middle;
+}
+
+
+.checkbox-group input:checked + .checkbox-group__indicator {
+  background-image: url('/images/checkbox-checked.png');
+}
+
+.history-nav {
+  clear: both;
+}
+
+.history-nav__list {
+  display: flex;
+}
+
+.history-nav__item {
+  margin-left: 7px;
+}
+
+.history-nav__link {
+  display: block;
+  padding-top: 14px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  @include ptSans('bold');
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #000000;
+  text-decoration: none;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.history-nav__link--active {
+  background-color: #ffffff;
+  color: #000000;
+}

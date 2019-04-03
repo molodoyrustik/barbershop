@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <!-- SEO-->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <!-- FAVICON-->
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+    <link href="/css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+</html>
+<body><!-- / ========= header ========= \ -->
+  <header class="header">
+    <div class="container">
+      <div class="header__nav-pos">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item" href="#"><a class="navigation__link" href="/price.html">Прайс-лист</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="/shop.html">Магазин</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__user-block-pos">
+        <div class="user-block"><a class="user-block__login" href="#">Вход</a></div>
+      </div>
+    </div>
+  </header>
+  <main class="index-page">
+    <div class="container">
+      <div class="main-logo">
+        <div class="main-logo__img-wrap"><img class="main-logo__img" src="/images/borodinski-logo.png" alt="main-logo"></div>
+      </div>
+      <section class="features">
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features__name">Быстро</div>
+            <div class="features__text">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</div>
+          </li>
+          <li class="features__item">
+            <div class="features__name">Круто</div>
+            <div class="features__text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</div>
+          </li>
+          <li class="features__item">
+            <div class="features__name">Дорого</div>
+            <div class="features__text">НАШИ МАСТЕРА - ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</div>
+          </li>
+        </ul>
+      </section>
+      <div class="index-content">
+        <div class="index-content__left">
+          <h2 class="index-content__title">Новости</h2>
+          <div class="news-preview">
+            <ul class="news-preview__list">
+              <li class="news-preview__item">
+                <p class="news-preview__text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                <time class="news-preview__time" datetime="2016-01-18">11 Января</time>
+              </li>
+              <li class="news-preview__item">
+                <p class="news-preview__text">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ </p>
+                <time class="news-preview__time" datetime="2016-01-18">11 Января</time>
+              </li>
+            </ul><a class="btn news-preview__btn" href="#">Все новости</a>
+          </div>
+        </div>
+        <div class="index-content__right">
+          <h2 class="index-content__title">Фотогалерея</h2>
+          <div class="gallery">
+            <figure class="gallery__content"><img class="gallery__img" src="/images/gallery-content.jpg" alt="gallery-img" width="286" height="164"></figure>
+            <div class="gallery__controllers">
+              <button class="btn gallery__prev-btn">Назад</button>
+              <button class="btn gallery__next-btn">Вперед</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="index-content">
+        <div class="index-content__left index-content__left--width">
+          <h2 class="index-content__title">Контактная информация</h2>
+          <div class="contact-info">
+            <p class="contect-info__text">БАРБЕРШОП «БОРОДИНСКИЙ» <br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+            <p class="contect-info__text">
+               ВРЕМЯ РАБОТЫ: <br>ПН — ПТ: С 10:00 ДО 22:00<br>СБ — ВС: С 10:00 ДО 19:00</p>
+            <div class="contact-info__controllers"><a class="btn contact-info__link" href="#">Как проехать</a><a class="btn contact-info__feedback" href="#">Обратная связь</a></div>
+          </div>
+        </div>
+        <div class="index-content__right">
+          <h2 class="index-content__title">Записаться</h2>
+          <div class="booking">
+            <div class="booking__text">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</div>
+            <form class="booking__form" action="">
+              <div class="booking__input-wrap">
+                <input class="input booking__input" type="text" placeholder="Дата">
+                <input class="input booking__input" type="text" placeholder="Время">
+                <input class="input booking__input" type="text" placeholder="Ваше имя">
+                <input class="input booking__input" type="text" placeholder="Телефон">
+              </div>
+              <button class="btn booking__btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal"><i class="modal__close" id="modal-close"></i>
+          <div class="modal__title">Личный кабинет</div>
+          <form class="modal__form" action="">
+            <label class="modal__label">Ведите пожалуйста свой логин и пароль</label>
+            <input class="modal__input" type="text" name="login">
+            <input class="modal__input" type="text" name="password">
+            <div class="modal__footer">
+              <label class="checkbox-group modal__checkbox-label">
+                <input class="checkbox-group__input" type="checkbox" name=""><span class="checkbox-group__indicator"></span><span class="modal__checkbox-text">Запомнить меня</span>
+              </label><a class="modal__forgot-pass" href="#">Я забыл пароль!</a>
+            </div>
+            <input class="btn modal__button" type="submit" value="Войти">
+          </form>
+        </div>
+        <div class="map"><i class="map__close"></i>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.93799466755!2d55.95330921605977!3d54.72830547800037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d93a446d2ee27b%3A0x5db465c7ada373f2!2z0YPQuy4g0KbRjtGA0YPQv9GLLCA3Niwg0KPRhNCwLCDQoNC10YHQvy4g0JHQsNGI0LrQvtGA0YLQvtGB0YLQsNC9LCA0NTAwMDA!5e0!3m2!1sru!2sru!4v1554317420828!5m2!1sru!2sru" width="765" height="560" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </main><!-- / ========= footer ========= \ -->
+  <!-- footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <section class="footer-contacts">
+          <p class="footer-contacts__text">БАРБЕРШОП «БОРОДИНСКИЙ»<br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>КАК НАС НАЙТИ?<br>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+        </section>
+        <section class="footer-socials">
+          <p class="footer-socials__title">Давайте дружить!</p>
+          <ul class="footer-socials__list">
+            <li class="footer-socials__item"><a class="footer-socials__link footer-socials__link--facebook" href="#">Facebook</a></li>
+            <li class="footer-socials__item"><a class="footer-socials__link footer-socials__link--instagram" href="#">Instagram</a></li>
+            <li class="footer-socials__item"><a class="footer-socials__link footer-socials__link--vk" href="#">VK</a></li>
+          </ul>
+        </section>
+        <section class="footer-copyright">
+          <p class="footer-copyright__title">Разработано:</p><a class="btn footer-copyright__btn" href="#">HTML Academy</a>
+        </section>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/foundation.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>

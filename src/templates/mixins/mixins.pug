@@ -1,0 +1,13 @@
+mixin navigation(item, additionClass)
+  if item !== 'Главная'
+    .header__logo-pos
+      .header__logo-wrap
+        a(href="/").header__logo-link
+          img(src="/images/header-logo.png", alt="").header__logo-img
+  .header__nav-pos
+    nav.navigation
+      ul.navigation__list
+        li.navigation__item(href='#' class=`${item !== 'Главная' ? 'navigation__item--marin-left': ''}`)
+          a.navigation__link(href='/price.html' class=`${item === 'Прайс-лист' ? additionClass: ''}`) Прайс-лист
+        li.navigation__item
+          a.navigation__link(href='/shop.html' class=`${item === 'Магазин' ? additionClass: ''}`) Магазин

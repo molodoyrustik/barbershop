@@ -1,0 +1,37 @@
+.navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__list {
+  @extend %clearfix;
+}
+
+.navigation__item {
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:hover {
+    background-color: #242424;
+  }
+}
+
+.navigation__item--marin-left {
+  margin-left: 20px;
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  font-size: 16px;
+  line-height: 16px;
+  @include ptSans('bold');
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+.navigation__link--active {
+  border-bottom: 4px solid #ffffff;
+}

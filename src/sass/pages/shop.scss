@@ -1,0 +1,123 @@
+.shop {
+  padding-top: 55px;
+  padding-bottom: 85px;
+  background-image: url('/images/barbershop-index.jpg')
+}
+
+.shop__header {
+  margin-bottom: 60px;
+}
+
+.shop__title {
+  margin-bottom: 30px;
+  @include ptSans('bold');
+  font-size: 30px;
+  color: #000000;
+}
+
+.shop__left {
+  float: left;
+}
+
+.shop-filter {
+  
+}
+
+.shop-filter__title {
+  margin-bottom: 35px;
+  @include ptSans('bold');
+  font-size: 24px;
+  color: #000000;
+}
+
+.shop-filter__form {
+  margin-bottom: 200px;
+}
+
+.shop-filter__producer {
+  margin-bottom: 55px;
+}
+
+.shop-filter__checkbox-label {
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.shop__right {
+  float: right;
+  width: 700px;
+}
+
+.shop-content {
+  @extend %clearfix;
+  margin-bottom: 25px;
+}
+
+.shop-content {
+  
+}
+
+.shop-content__product {
+  float: left;
+  width: 220px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, .20);
+
+  &:first-child {
+    margin-left: 0px;
+  }
+
+  &:nth-child(3n+1):nth-child(even) {
+    margin-left: 0px;
+  }
+}
+
+.shop-content__img-wrap {
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+.shop-content__img {
+  display: block;
+  width: 100%;
+}
+
+.shop-content__product-footer {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+.shop-content__product-link {
+  text-decoration: none;
+}
+
+.shop-content__title {
+  margin-bottom: 17px;
+  @include ptSans('bold');
+  font-size: 14px;
+  color: #000000;
+}
+
+.shop-content__footer {
+  display: flex;
+}
+
+.shop-content__price {
+  width: 110px;
+  @include ptSans('bold');
+  font-size: 14px;
+  color: #000000;
+  background-color: #e5e5e5;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.shop-content__btn {
+  width: 80px;
+}
